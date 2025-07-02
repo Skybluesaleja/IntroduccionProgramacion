@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLATAFORMAS</title>
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Mario.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="text-3xl font-bold mb-4">PLATAFORMAS</h1>
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div id="gameMessage" class="game-info">Presiona "Iniciar Juego" o "Espacio" para comenzar.</div>
+        <button id="startButton" class="control-button">Iniciar Juego</button>
+
+        <div class="controls">
+            <button id="leftButton" class="control-button">Izquierda</button>
+            <button id="rightButton" class="control-button">Derecha</button>
+            <button id="jumpButton" class="control-button">Saltar</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="Mario.js"></script>
+</body>
+</html>

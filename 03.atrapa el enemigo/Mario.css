@@ -1,0 +1,94 @@
+/* style.css */
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #5692e1; /* Light blue-gray background */
+    color: #3e5172; /* Dark gray text */
+    padding: 1rem;
+}
+.game-container {
+    background-color: #ffffffdd;
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90vw; /* Max width for responsiveness */
+    width: 800px; /* Base width */
+}
+canvas {
+    background-color: #a0aec0; /* Medium blue-gray for canvas background */
+    border: 2px solid #38445b; /* Darker border */
+    border-radius: 0.5rem; /* Slightly rounded canvas corners */
+    display: block;
+    touch-action: none; /* Prevent default touch actions like scrolling/zooming */
+}
+.game-info {
+    margin-top: 1rem;
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    color: #2b6cb0; /* Blue text */
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+.control-button {
+    background-color: #6b46c1; /* Purple button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem; /* Rounded button corners */
+    font-weight: bold;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    flex: 1; /* Allow buttons to grow */
+    max-width: 150px; /* Max width for individual buttons */
+}
+.control-button:hover {
+    background-color: #735bb6; /* Darker purple on hover */
+    transform: translateY(-2px);
+}
+.control-button:active {
+    background-color: #44337a; /* Even darker on active */
+    transform: translateY(0);
+}
+#startButton {
+    background-color: #38a169; /* Green button */
+    margin-top: 1.5rem;
+}
+#startButton:hover {
+    background-color: #2f855a;
+}
+#startButton:active {
+    background-color: #276749;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .game-container {
+        padding: 1rem;
+    }
+    .controls {
+        flex-wrap: wrap; /* Wrap buttons on smaller screens */
+        gap: 0.75rem;
+    }
+    .control-button {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        flex-basis: calc(50% - 0.75rem); /* Two buttons per row */
+    }
+    #jumpButton {
+        flex-basis: 100%; /* Jump button takes full width */
+    }
+}
