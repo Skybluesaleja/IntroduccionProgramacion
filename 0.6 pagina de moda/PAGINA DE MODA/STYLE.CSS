@@ -1,0 +1,38 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 8px;
+}
+
+.slider-nav {
+  margin-top: 10px;
+}
+
+.slider-nav button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}

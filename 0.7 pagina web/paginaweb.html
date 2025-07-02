@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PERSONAL SHOPPER ALEJANDRA SUAZA - Blog de Moda</title>
+  <meta name="description" content="Blog de moda y estilo personal por Alejandra Suaza. Aprende a sacarle provecho a tus prendas y define tu estilo con nuestros consejos y tendencias.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Montserrat', Arial, sans-serif; }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; }
+    .carousel-img { display: none; }
+    .carousel-img.active { display: block; }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 via-purple-200 to-blue-100 min-h-screen text-gray-800">
+
+<header class="w-full py-8 px-4 md:px-12 bg-white/80 shadow-lg">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+    <div class="flex-1">
+      <h1 class="text-4xl md:text-5xl font-bold italic text-purple-700 mb-2">
+        PERSONAL SHOPPER
+        <span class="block text-lg not-italic text-purple-400 tracking-widest">ALEJANDRA SUAZA</span>
+      </h1>
+      <p class="mb-4 text-lg text-gray-600">Aprende a sacarle provecho a tus prendas y define tu estilo.</p>
+      <nav>
+        <ul class="flex flex-wrap justify-end gap-3 mt-4">
+          <li><a href="#" class="px-5 py-2 rounded-full bg-purple-200 text-purple-800 font-semibold shadow hover:bg-purple-400 hover:text-white transition">Inicio</a></li>
+          <li><a href="#" class="px-5 py-2 rounded-full bg-purple-200 text-purple-800 font-semibold shadow hover:bg-purple-400 hover:text-white transition">Tendencias</a></li>
+          <li><a href="#" class="px-5 py-2 rounded-full bg-purple-200 text-purple-800 font-semibold shadow hover:bg-purple-400 hover:text-white transition">Colorimetría</a></li>
+          <li><a href="#" class="px-5 py-2 rounded-full bg-purple-200 text-purple-800 font-semibold shadow hover:bg-purple-400 hover:text-white transition">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex-1 flex justify-center">
+      <div class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-lg bg-white">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/tendencias-moda-2025-vestidos-fiesta-navidad-nochevieja-1-676d81a612b42.jpg?crop=0.502xw:1.00xh;0.251xw,0&resize=1120:*" alt="Moda 1" class="carousel-img active absolute inset-0 w-full h-full object-cover transition-opacity duration-700">
+        <img src="https://i.pinimg.com/236x/92/4c/04/924c0430ef8f589a9344f49c0320b06c.jpg" alt="Moda 2" class="carousel-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tJjGZrW5IJuUqw5af4-qQKofbMpyXQnLPA&s" alt="Moda 3" class="carousel-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700">
+        <button id="prevBtn" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-purple-200 text-purple-700 rounded-full p-2 shadow transition">&#10094;</button>
+        <button id="nextBtn" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-purple-200 text-purple-700 rounded-full p-2 shadow transition">&#10095;</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-10">
+  <section class="ultimos-articulos">
+    <h2 class="text-3xl font-bold text-purple-700 mb-6">Últimos Artículos</h2>
+    <p class="mb-8 text-gray-600">Descubre los mejores consejos de moda y estilo.</p>
+    <div class="grid md:grid-cols-2 gap-8">
+         <div class="flex items-center justify-center bg-gray-100 p-4">
+     <audio controls class="w-full max-w-md">
+       <source src="https://rr1---sn-a5mlrnls.googlevideo.com/videoplayback?expire=1750880125&ei=HftbaKOcNJ68sfIPobSEqQw&ip=45.81.149.102&id=o-AJXZ_mtCiC-cm54KUzymfRQ8DxXJl__eg8q-C8R2wZnG&itag=18&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&rms=au%2Cau&bui=AY1jyLOrnqd2Ps7Wpn17IKg5m82eHUN2MF626_f77_QIFEqiA3PA31iC8dThL-qt9ahLp6sN3pxeBnI3&vprv=1&svpuc=1&mime=video%2Fmp4&ns=7fAe55pTrp7Zoi4ad5dIKQcQ&rqh=1&gir=yes&clen=12949339&ratebypass=yes&dur=225.442&lmt=1750387351807429&lmw=1&c=TVHTML5&sefc=1&txp=4538534&n=TPcPbX6y0yfiYQ&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgCRxmJYpAhcv_PFHbghMm6Si-jzdm5qXkuHwcy-g68NECIBq9vRd3345B4lX-YN20mZZFGo6I7I9s0d2kffhhnoYr&redirect_counter=1&rm=sn-nx5zk7e&rrc=104&fexp=24350590,24350737,24350827,24350961,24351173,24351316,24351318,24351528,24351907,24352102,24352220,24352236,24352321,24352390,24352392,24352434,24352457&req_id=26a9eb196d5aa3ee&cms_redirect=yes&cmsv=e&ipbypass=yes&met=1750858594,&mh=6J&mip=190.217.58.184&mm=31&mn=sn-a5mlrnls&ms=au&mt=1750857538&mv=D&mvi=1&pl=0&lsparams=ipbypass,met,mh,mip,mm,mn,ms,mv,mvi,pl,rms&lsig=APaTxxMwRgIhAIJrtpNqmP2mkDvQASJFN5XRyQzyF52TWE-cvXD8-PNZAiEAyopUXnkSIyO0x2nW9-gJKfQ_YDaH6hZi3i5hPoX4tAM%3D" type="audio/mpeg">
+     </audio>
+   </div>
+     
+      <article class="card bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+        <div class="flex items-center gap-3 mb-2">
+          <time class="text-xs text-purple-400 font-semibold" datetime="2025-06-25">JUNIO 25, 2025</time>
+          <span class="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full font-semibold">Estilo Personal</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 hover:text-purple-700 transition">
+          <a href="#">Descubre una forma diferente de encontrar tu estilo</a>
+        </h3>
+        <p class="mb-4 text-gray-600">Explora cómo un personal shopper puede transformar tu guardarropa y tu confianza, ayudándote a expresar tu personalidad a través de la moda.</p>
+        <div class="flex items-center gap-3">
+          <img src="https://i.pinimg.com/736x/02/f7/ed/02f7ed901b88f5fe9aadf1582af71ae3.jpg" alt="Foto de Alejandra Suaza" class="w-10 h-10 rounded-full object-cover border-2 border-purple-200" />
+          <div>
+            <p class="font-semibold text-purple-700"><a href="#">Alejandra Suaza</a></p>
+            <p class="text-xs text-gray-400">Personal Shopper / Asesora de Imagen</p>
+          </div>
+        </div>
+      </article>
+     
+      <article class="card bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition">
+        <div class="flex items-center gap-3 mb-2">
+          <time class="text-xs text-purple-400 font-semibold" datetime="2025-06-20">JUNIO 20, 2025</time>
+          <span class="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full font-semibold">Tendencias</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-2 hover:text-purple-700 transition">
+          <a href="#">Tendencias de moda para el verano 2025</a>
+        </h3>
+        <p class="mb-4 text-gray-600">Conoce las tendencias más destacadas de la temporada y cómo incorporarlas a tu estilo personal.</p>
+        <div class="flex items-center gap-3">
+          <img src="https://i.pinimg.com/736x/72/3f/fa/723ffadedba725e33abf074551ef68d8.jpg" alt="Foto de Alejandra Suaza" class="w-10 h-10 rounded-full object-cover border-2 border-purple-200" />
+          <div>
+            <p class="font-arial text-purple-700"><a href="#">Alejandra Suaza</a></p>
+            <p class="text-xs text-gray-400">Personal Shopper / Asesora de Imagen</p>
+          </div>
+        </div>
+      </article>
+      
+      <article class="card bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+  <div class="flex items-center gap-3 mb-2">
+    <time class="text-xs text-pink-400 font-semibold" datetime="2025-06-10">JUNIO 15, 2025</time>
+    <span class="bg-pink-100 text-pink-700 text-xs px-3 py-1 rounded-full font-semibold">Colorimetría</span>
+  </div>
+  <h3 class="text-xl font-semibold mb-2 hover:text-pink-700 transition">
+    <a href="#">¿Qué colores te favorecen según tu tono de piel?</a>
+  </h3>
+  <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=facearea&w=400&q=80" alt="Colorimetría" class="w-full h-40 object-cover rounded-lg mb-3">
+  <p class="mb-4 text-gray-600">Descubre cómo la colorimetría puede ayudarte a elegir prendas que resalten tu belleza natural.</p>
+  <div class="flex items-center gap-3">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Asesora" class="w-10 h-10 rounded-full object-cover border-2 border-pink-200" />
+    <div>
+      <p class="font-semibold text-pink-700"><a href="#">Jonas</a></p>
+      <p class="text-xs text-gray-400">Especialista en Colorimetría</p>
+    </div>
+  </div>
+</article>
+
+<article class="card bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+  <div class="flex items-center gap-3 mb-2">
+    <time class="text-xs text-blue-400 font-semibold" datetime="2025-05-30">23 de JUNIO, 2025</time>
+    <span class="bg-blue-100 text-blue-700 text-xs px-3 py-1 rounded-full font-semibold">Tendencias</span>
+  </div>
+  <h3 class="text-xl font-semibold mb-2 hover:text-blue-700 transition">
+    <a href="#">Accesorios imprescindibles para este año</a>
+  </h3>
+  <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=400&q=80" alt="Accesorios" class="w-full h-40 object-cover rounded-lg mb-3">
+  <p class="mb-4 text-gray-600">Los accesorios pueden transformar cualquier look. Descubre cuáles son los must-have de la temporada y cómo llevarlos con estilo.</p>
+  <div class="flex items-center gap-3">
+    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Colaborador" class="w-10 h-10 rounded-full object-cover border-2 border-blue-200" />
+    <div>
+      <p class="font-semibold text-blue-700"><a href="#">Nicholas Jerry</a></p>
+      <p class="text-xs text-gray-400">Editor de Moda</p>
+    </div>
+  </div>
+</article>
+
+<article class="card bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+  <div class="flex items-center gap-3 mb-2">
+    <time class="text-xs text-green-400 font-semibold" datetime="2025-05-28">MAYO 28, 2025</time>
+    <span class="bg-green-100 text-green-700 text-xs px-3 py-1 rounded-full font-semibold">Moda</span>
+  </div>
+  <h3 class="text-xl font-semibold mb-2 hover:text-green-700 transition">
+    <a href="#">Cómo crear tu propio estilo personal</a>
+  </h3>
+  <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=facearea&w=400&q=80" alt="Estilo personal" class="w-full h-40 object-cover rounded-lg mb-3">
+  <p class="mb-4 text-gray-600">Aprende a identificar las prendas y colores que mejor te representan y destaca tu personalidad a través de la moda.</p>
+  <div class="flex items-center gap-3">
+    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Asesora" class="w-10 h-10 rounded-full object-cover border-2 border-green-200" />
+    <div>
+      <p class="font-semibold text-green-700"><a href="#">selena marie </a></p>
+      <p class="text-xs text-gray-400">Asesora de Imagen</p>
+    </div>
+  </div>
+</article>
+
+<article class="card bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+  <div class="flex items-center gap-3 mb-2">
+    <time class="text-xs text-purple-400 font-semibold" datetime="2025-07-01">JUNIO 01, 2025</time>
+    <span class="bg-purple-100 text-purple-700 text-xs px-3 py-1 rounded-full font-semibold">Tendencias</span>
+  </div>
+  <h3 class="text-xl font-semibold mb-2 hover:text-purple-700 transition">
+    <a href="#">Colores que dominarán la moda este verano</a>
+  </h3>
+  <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=facearea&w=400&q=80" alt="Colores de verano" class="w-full h-40 object-cover rounded-lg mb-3">
+  <p class="mb-4 text-gray-600">Descubre los tonos vibrantes y pasteles que serán protagonistas en las pasarelas y en las calles durante la temporada más cálida del año.</p>
+  <div class="flex items-center gap-3">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Asesora" class="w-10 h-10 rounded-full object-cover border-2 border-purple-200" />
+    <div>
+      <p class="font-semibold text-purple-700"><a href="#">María Gómez</a></p>
+      <p class="text-xs text-gray-400">Editora de Tendencias</p>
+    </div>
+  </div>
+</article>
+
+<article class="card bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-300">
+  <div class="flex items-center gap-3 mb-2">
+    <time class="text-xs text-pink-400 font-semibold" datetime="2025-06-20">JUNIO 20, 2025</time>
+    <span class="bg-pink-100 text-pink-700 text-xs px-3 py-1 rounded-full font-semibold">Moda</span>
+  </div>
+  <h3 class="text-xl font-semibold mb-2 hover:text-pink-700 transition">
+    <a href="#">Vestidos largos: el must-have de la temporada</a>
+  </h3>
+  <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=facearea&w=400&q=80" alt="Vestidos largos" class="w-full h-40 object-cover rounded-lg mb-3">
+  <p class="mb-4 text-gray-600">Los vestidos largos vuelven con fuerza. Aprende a combinarlos para lograr un look elegante y fresco, ideal para cualquier ocasión.</p>
+  <div class="flex items-center gap-3">
+    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Colaboradora" class="w-10 h-10 rounded-full object-cover border-2 border-pink-200" />
+    <div>
+      <p class="font-semibold text-pink-700"><a href="#">Lucía Torres</a></p>
+      <p class="text-xs text-gray-400">Colaboradora de Moda</p>
+    </div>
+  </div>
+</article>
+    </div>
+  </section>
+  
+  <div class="flex justify-center my-12">
+  <div class="w-full max-w-2xl aspect-video rounded-2xl overflow-hidden shadow-lg">
+    <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/25956Au5n8Y?si=GY_H0Tp2hmuF-p8K"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+</main>
+
+<footer class="w-full py-6 bg-purple-100 text-center text-purple-700 font-semibold mt-10">
+  &copy; 2025 Alejandra Suaza. Todos los derechos reservados.
+</footer>
+
+
+<script>
+const images = document.querySelectorAll('.carousel-img');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+let current = 0;
+let interval;
+
+function showImage(index) {
+  images.forEach((img, i) => {
+    img.classList.toggle('active', i === index);
+  });
+}
+
+function nextImage() {
+  current = (current + 1) % images.length;
+  showImage(current);
+}
+
+function prevImage() {
+  current = (current - 1 + images.length) % images.length;
+  showImage(current);
+}
+
+function startCarousel() {
+  interval = setInterval(nextImage, 4000);
+}
+
+function stopCarousel() {
+  clearInterval(interval);
+}
+
+prevBtn.addEventListener('click', () => {
+  stopCarousel();
+  prevImage();
+  startCarousel();
+});
+
+nextBtn.addEventListener('click', () => {
+  stopCarousel();
+  nextImage();
+  startCarousel();
+});
+
+showImage(current);
+startCarousel();
+</script>
+</body>
+</html>

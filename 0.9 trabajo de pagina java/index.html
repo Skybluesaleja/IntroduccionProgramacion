@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Literatura</title>
+ <link rel="stylesheet" href="literatura.css">
+</head>
+<body>
+<header>
+<div class="carousel">
+<img src="https://i.pinimg.com/736x/1b/bb/36/1bbb36b04cffdda162af7fae9bd25b9b.jpg" alt="Imagen 1">
+<img src="https://i.pinimg.com/736x/a5/91/85/a591850abe58de2570f8d4c88db3b51c.jpg" alt="Imagen 2">
+<img src="https://i.pinimg.com/736x/4d/bc/df/4dbcdf5e58a0377bcb14955c1d6bbcdf.jpg" alt="Imagen 3">
+<img src="https://i.pinimg.com/736x/d6/a3/0c/d6a30c231818a998ade6c5aa0cd514d0.jpg" alt="Imagen 4">
+</div>
+ </header>
+ <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Registro de Literatura</h1>
+ <p class="text-center text-gray-600 mb-6">
+ Aquí podrás encontrar diferentes tipos de géneros literarios.</p>
+<main class="libro">
+<form id="literature-form" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<div class="form-group">
+<label for="titulo">literatura:</label>
+<input type="libro" id="titulo" placeholder="Ej. Cien años de soledad" required>
+ </div>
+ <div class="form-group">
+<label for="Autor">Autor:</label>
+ <input type="text" id="Autor" placeholder="Ej. Gabriel García Márquez" required>
+</div>
+<div class="form-group">
+ <label for="Género">Género:</label>
+ <input type="text" id="Género" placeholder="Ej. Novela, Suspenso, Terror, Acción, Aventura, Romance, Fantasía, Ciencia Ficción" required>
+ </div>
+<div class="form-group">
+ <label for="Año de Publicación">Año de Publicación:</label>
+<input type="number" id="Año de Publicación" placeholder="Ej. 1987" min="0" max="2100">
+</div>
+<div class="md:col-span-2">
+ <button type="submit" class="btn-primary">Registrar Libro</button>
+ <footer>
+ <p>Visítanos para escucharnos en Youtube y Spotify:</p>
+<a href="https://www.youtube.com/watch?v=ihYTrjF5IcA" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-semibold underline">Ir a Youtube</a>
+<a href="https://open.spotify.com/episode/6vq3DByfXM8L39FXHPSBuC" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-semibold underline">Ir a Spotify</a>
+</footer>
+</div>
+</form>
+ <section>
+ <h2 class="text-2xl font-semibold text-gray-700 mb-6">Mis Registros</h2>
+ <ul id="literature-list" class="literature-list mb-8">
+ </ul>
+</section>
+ <div class="button-group">
+<button type="button" class="btn btn-primary">Novelas</button>
+<button type="button" class="btn btn-secondary">Suspenso</button>
+<button type="button" class="btn btn-success">Terror</button>
+<button type="button" class="downButton">Encuentra aquí tu libro favorito</button>
+</div>
+</main>
+<script src="literatura.js"></script>
+</body>
+</html>

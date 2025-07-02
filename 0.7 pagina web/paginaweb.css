@@ -1,0 +1,212 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    line-height: 1.6;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+
+    
+    background: linear-gradient(120deg, #c4cbd6 0%, #b794f4 60%, #90cdf4 100%);
+    color: #222; 
+
+
+.group-hover\:text-gray-600:hover {
+    text-decoration: underline; 
+}
+
+
+footer p {
+    font-size: 0.9rem;
+    color: #d9c2c2;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #89addf; 
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    color: #0c0511; 
+    margin-bottom: 0.3em;
+}
+
+
+a {
+    color: #368ee0; 
+    transition: color 0.2s;
+}
+a:hover {
+    color: #2b6cb0; 
+}
+
+
+.button, .btn {
+    background-color: #38b2ac; 
+    color: #d7bfbf;
+    border: none;
+    padding: 0.5em 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.button:hover, .btn:hover {
+    background-color: #319795; 
+}
+
+
+.nav-btn {
+    display: inline-block;
+    background-color: #a989e0; 
+    color: #fff;
+    padding: 0.5em 1.5em;
+    margin: 0 0.3em;
+    border: none;
+    border-radius: 999px; 
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(183, 148, 244, 0.15);
+}
+.nav-btn:hover {
+    background-color: #7d5cc0; 
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(159, 122, 234, 0.18);
+}
+
+
+footer {
+    background-color: #2d3748; /
+    color: #eee;
+    padding: 1em 0;
+}
+
+
+.article, .card {
+    background: #d7cece;
+    border: 1px solid #ced9e7;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #c8d3e1;
+}
+
+
+.header-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.header-text {
+    flex: 1 1 60%;
+}
+
+.header-carousel {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 220px;
+    max-width: 320px;
+}
+
+
+.carousel {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(107, 33, 168, 0.12);
+}
+
+.carousel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: carouselFade 8s infinite;
+    transition: opacity 0.5s;
+}
+
+.carousel img:nth-child(1) { animation-delay: 0s; }
+.carousel img:nth-child(2) { animation-delay: 4s; }
+
+
+@keyframes carouselFade {
+    0%   { opacity: 1; }
+    45%  { opacity: 1; }
+    50%  { opacity: 0; }
+    95%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Animación de entrada para las tarjetas */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+.card {
+    animation: fadeInUp 0.8s both;
+}
+
+/* Efecto de sombra y escala al pasar el mouse en las tarjetas */
+.card:hover {
+    transform: scale(1.03) translateY(-4px);
+    box-shadow: 0 8px 32px rgba(107, 33, 168, 0.18);
+    border-color: #b794f4;
+}
+
+/* Botón flotante para subir artículos */
+.fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(90deg, #b794f4 60%, #90cdf4 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    box-shadow: 0 4px 24px rgba(107, 33, 168, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.fab:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(107, 33, 168, 0.25);
+}
+
+
+@media (max-width: 800px) {
+    .header-main {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header-carousel {
+        justify-content: center;
+        margin-top: 1em;
+    }
+}

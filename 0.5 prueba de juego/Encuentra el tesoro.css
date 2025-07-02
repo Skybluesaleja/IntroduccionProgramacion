@@ -1,0 +1,157 @@
+/* General body styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #84a1d6; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    color: #030f1e; /* Light text color */
+}
+
+/* Main game container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1c5fd2; /* Container background */
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(19, 18, 18, 0.3);
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+/* Canvas styling */
+canvas {
+    background-color: #0e0d0d; /* Darker background for the game area */
+    border: 2px solid #4a5568;
+    border-radius: 8px;
+    display: block;
+    touch-action: none; /* Prevent default touch actions like scrolling */
+}
+
+/* Button styling */
+.game-button {
+    padding: 12px 24px;
+    background-color: #4299e1; /* Vibrant blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.game-button:hover {
+    background-color: #3182ce;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.game-button:active {
+    background-color: #2b6cb0;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Game messages */
+.game-message {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #a0aec0;
+    text-align: center;
+}
+
+/* Touch controls styling */
+.touch-controls {
+    display: none; /* Hidden by default, shown on small screens */
+    grid-template-areas:
+        ". up ."
+        "left . right"
+        ". down .";
+    gap: 10px;
+    margin-top: 20px;
+    width: 200px; /* Fixed width for touch d-pad */
+    height: 200px; /* Fixed height for touch d-pad */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.touch-button {
+    width: 60px;
+    height: 60px;
+    background-color: #63b3ed;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circular buttons */
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.touch-button:hover {
+    background-color: #4299e1;
+    transform: scale(1.05);
+}
+
+.touch-button:active {
+    background-color: #3182ce;
+    transform: scale(0.95);
+}
+
+#upButton { grid-area: up; }
+#leftButton { grid-area: left; }
+#rightButton { grid-area: right; }
+#downButton { grid-area: down; }
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .game-container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .game-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .game-message {
+        font-size: 1em;
+    }
+
+    .touch-controls {
+        display: grid; /* Show touch controls on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .touch-button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2em;
+    }
+    .touch-controls {
+        width: 150px;
+        height: 150px;
+    }
+}

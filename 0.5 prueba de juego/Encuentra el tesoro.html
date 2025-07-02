@@ -1,0 +1,29 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra el tesoro</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="Encuentra el tesoro.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="text-3xl font-bold text-white mb-4">Encuentra el tesoro</h1>
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <div id="gameMessage" class="game-message">Presiona 'Iniciar Juego' o 'Espacio' para comenzar</div>
+        <button id="startButton" class="game-button">Iniciar Juego</button>
+
+        <!-- Touch controls for mobile -->
+        <div class="touch-controls">
+            <button id="upButton" class="touch-button">▲</button>
+            <button id="leftButton" class="touch-button">◀</button>
+            <button id="rightButton" class="touch-button">▶</button>
+            <button id="downButton" class="touch-button">▼</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="Encuentra el tesoro.js"></script>
+</body>
+</html>
